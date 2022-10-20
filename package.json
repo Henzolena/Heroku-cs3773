@@ -1,24 +1,18 @@
 {
-  "name": "demo-repo",
-  "version": "0.2.0",
-  "description": "A sample package.json",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "@primer/css": "17.0.1",
-    "express": "^4.18.2"
-  },
-  "license": "MIT",
+  "name": "002",
+  "version": "1.0.0",
+  "description": "Deploy Nodejs to Heroku",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/UTSA-CS3773-aglieSoftwareEngineering/Bark-Cart.git"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/UTSA-CS3773-aglieSoftwareEngineering/Bark-Cart/issues"
+  "author": "Henok Robale",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^19.0.0"
   },
-  "homepage": "https://github.com/UTSA-CS3773-aglieSoftwareEngineering/Bark-Cart#readme"
+  "engines": {
+    "node": "16.13.1"
+  }
 }

@@ -1,8 +1,17 @@
-import express from "express";
-const app = express();
+const mysql = require('mysql');
 
-app.get("/",  function(res, req){
-    res.setEncoding("ITS WORKING!!")
+const con = mysql.createConnection({
+  host: "us-cdbr-east-06.cleardb.net",
+  user: "bacd98390a8c34",
+  password: "a467961a",
+  database: "heroku_82cccbf5c93e9b5"
 });
 
-app.listen(process.env.PORT || 5000);
+con.connect(function(err) {
+//   if (err) throw err;
+//   console.log("Connected!");
+  con.query('select * from address'), (err, results) => {
+    if(err) throw err;
+    console.log(results);
+  }
+  });
