@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "A sample package.json",
   "scripts": {
-    "start": "npm start --prefix client/"
+    "start": "node index.js"
   },
   "dependencies": {
     "@primer/css": "17.0.1",
